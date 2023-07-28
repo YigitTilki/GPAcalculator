@@ -32,7 +32,7 @@ class _CreditDropDownState extends State<CreditDropDown> {
         onChanged: (value) {
           setState(() {
             selectedCreditValue = value!;
-            widget.onCreditSelected();
+            widget.onCreditSelected(selectedCreditValue);
           });
         },
       ),
